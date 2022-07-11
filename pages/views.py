@@ -1,4 +1,12 @@
 from django.shortcuts import render, HttpResponse
 
+
+
 def homePageView(request):
-	return HttpResponse('<h1> Hello, World</h1>')
+	return render(request, 'index.html')
+
+# about page
+
+
+def aboutPageView(request):
+	return render(request, 'about.html')
